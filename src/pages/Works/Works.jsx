@@ -10,7 +10,7 @@ export default function Works() {
 			<p className='p-3 text-lg bg-slate-300 dark:bg-slate-600 '>Découvrez pas à pas comment nous avons été présent pour lancer vos marques préférées.</p>
       <div className='flex flex-col py-3'>
         { works.map((work) => (
-          <Link to={`/works/${work.slug}`} className='hover:text-blue-400 ml-10 m-1'>&#8680; {work.title}</Link>
+          <Link to={`/works/${work.slug}`} key={work.slug} className='hover:text-blue-400 ml-10 m-1'>&#8680; {work.title}</Link>
         ))}
       </div>
 		</div>
