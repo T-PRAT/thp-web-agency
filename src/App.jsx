@@ -2,7 +2,8 @@ import Navbar from './Components/Navbar/Navbar';
 import {BrowserRouter,Routes,Route} from "react-router-dom";
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
-import Work from './pages/Work/Work';
+import Works from './pages/Works/Works';
+import StudyCase from './pages/StudyCase/StudyCase';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/about' element={<About/>}/>
-        <Route path='/work' element={<Work/>}/>
+        <Route path='/works' element={<Works/>}/>
+        <Route path='/works/:slug' element={<StudyCase/>}/>
       </Routes>
     </BrowserRouter>
   );
